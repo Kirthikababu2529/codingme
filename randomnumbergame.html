@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head><title>Guess the number</title></head>
+    <head>
+        <title>Guess the number</title>
+        <style>
+            body{
+                padding-top: 20%;
+                background-color:black;
+            }
+            h1{
+                color:aqua;
+            }
+            #one{
+                color:brown;
+                font-size: 20px;
+                padding-top: 2%;
+            }
+            #two{
+                color:bisque;
+                font-size: 25px;
+            }
+            button:hover{
+                background-color:purple;
+            }
+            #inp:hover{
+                 color:grey;
+            }
+            #inp{
+                padding:5px;
+                border:solid 2px white;
+            }
+        </style>
+    
+    </head>
     <body>
+        <center>
         <h1>Guess the number from 1 to 10</h1>
         <input type="text" placeholder="enter the number" id="inp">
         <button onclick="check()">Check</button>
         <p id="one">You are wrong/right</p>
         <P id="two">Your score is:10</P>
+    </center>
 
 
 
