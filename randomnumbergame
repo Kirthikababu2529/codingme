@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Guess the number</title></head>
+    <body>
+        <h1>Guess the number from 1 to 10</h1>
+        <input type="text" placeholder="enter the number" id="inp">
+        <button onclick="check()">Check</button>
+        <p id="one">You are wrong/right</p>
+        <P id="two">Your score is:10</P>
+
+
+
+        <script>
+            var guess=document.getElementById("inp")
+            var r=Math.floor(Math.random()*10)+1
+            var score=10
+
+            function check()
+            {
+                var enterednum=guess.value
+                console.log(r)
+                if(r==enterednum)
+                {
+                    console.log("you are right")
+                    one.textContent="you are right"
+                    window.alert("you won")
+                }
+                else{
+                    score=score-1
+                    console.log("you are wrong")
+                    one.textContent="you are wrong"
+                    two.textContent="your Score is: "+score
+                }
+
+
+            }
+        </script>
+    </body>
+</html>
